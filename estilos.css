@@ -1,0 +1,649 @@
+/** Hoja de estilos unica para la pagina GENUINA BEER **/
+
+
+
+/** Estilos generales mayores (comunes de todas paginas) **/
+
+/** 1) NAVBAR **/
+
+.top-nav-collapse {
+    background-color: #0F0E0E;
+    
+}
+
+body#servicios, body#clientes, body#bio, body#contacto, body#privacidad{
+
+
+background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+
+
+}
+
+	/** Media query personalizado para que el navbar tome otro color desde pantallas medianas para abajo  **/
+
+@media (max-width: 991.98px) {
+
+.navbar {
+
+        background-color: #797070;
+    }
+
+}
+
+
+/** 2) FOOTER **/
+
+.footer {
+
+  background: #152F4F;
+  color: white; 
+
+}
+
+
+.derechos {
+
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/** Estilos generales menores (comunes de cada pagina) **/
+
+/** INDEX PAGE **/
+
+html#index,body#index,.view {
+  height: 100%;
+}
+
+.view {
+
+    background: url("img/index/back16.jpg")
+    no-repeat center center;
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.view {
+    background: url("img/index/back21.jpg")
+    no-repeat center center;
+    background-size: cover;
+}
+
+}
+
+
+
+
+/** PRODUCTOS PAGE **/
+
+body#productos {
+
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.este {
+
+    background: url("img/productos/backproductos3.jpg")
+    no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.view {
+    background: url("img/productos/backproductos3.jpg")
+    no-repeat center center;
+    background-size: cover;
+}
+
+}
+
+table th, table td {
+  text-align: center;
+
+}
+
+
+
+
+.margen{
+
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
+
+
+.top-nav-collapse {
+    background-color: #080808;
+    
+}
+
+@media(max-width: 1000px){
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+}
+@media(max-width: 600px){
+  .gallery .image{
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+@media(max-width: 376px){
+  .margen-productos {
+    margin-top: 25%
+  }
+}
+
+
+
+
+table th, table td {
+  text-align: center;
+
+}
+
+
+
+
+.margen{
+
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
+
+
+.top-nav-collapse {
+    background-color: #080808;
+    
+}
+
+.carousel {
+
+    padding: 35px;
+}
+
+
+.t-1 {
+
+font-family: Roboto;
+font-size: 55px;
+font-weight: 700;
+padding: 20px 0px 20px;
+
+}
+
+.t-2 {
+
+font-family: Roboto;
+font-size: 15px;
+font-weight: 700;
+padding: 30px 0px 20px 
+
+}
+
+
+.t-3 {
+  font-family: Roboto;
+font-size: 30px;
+font-weight: 700;
+padding-left: 20px
+}
+
+
+        /** IMAGENES DE LOS CUADROS EN VENTA **/
+
+
+.wrapper{
+  max-width: 1100px;
+
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .image{
+  padding: 7px;
+  width: calc(100% / 3);
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 5vh 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  display: flex;
+  align-items: center;
+  padding: 12px 15px 12px 10px;
+  justify-content: space-between;
+}
+.preview-box .details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  margin: 0 5px;
+}
+.details .title p.current-img{
+  font-weight: 500;
+}
+.details .icon{
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+.preview-box .image-box{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.image-box .slide{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  height: 50px;
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+.slide.prev{
+  left: 0px;
+}
+.slide.next{
+  right: 0px;
+}
+.image-box img{
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.45);
+}
+
+@media(max-width: 1000px){
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+}
+@media(max-width: 600px){
+  .gallery .image{
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+@media(max-width: 376px){
+  .margen-productos {
+    margin-top: 25%
+  }
+}
+
+
+
+
+/** SERVICIOS PAGE **/
+
+ol, ul {
+list-style: none; }
+
+.margen-servicios{
+
+margin-top: 10%;
+padding-bottom: 5%;
+
+}
+
+.servicios-bar {
+
+  width: 85%;
+  padding-top: 50px;
+}
+
+.titulo1 {
+
+font-size: 26px;
+
+}
+
+.titulo2 {
+
+font-size: 24px;
+
+}
+
+.columna1{
+
+
+}
+
+
+.columna2 {
+
+  align-self: center;
+}
+
+@media (max-width: 991.98px) { 
+
+/** Cambia el fondo del index en dispositivos SM **/
+
+.margen-servicios{
+
+margin-top: 20%;
+padding-bottom: 10%;
+
+
+}
+}
+
+
+/** CLIENTES PAGE **/
+
+h1 {
+
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+.margen-clientes {
+
+padding-top: 10%;
+padding-bottom: 5%;
+
+}
+
+
+@media only screen and (max-width: 991.98px) { 
+
+
+.margen-clientes {
+
+padding-top: 35%;
+padding-bottom: 5%;
+
+}
+}
+
+.imagenempresa{
+
+display:block;
+margin:auto;
+
+}
+
+.titulo-clientes {
+
+text-align: center;
+font-size: 1.5rem;
+
+}
+
+.barra  {
+
+border: 1px solid black;
+
+}
+
+
+
+.top-nav-collapse {
+    background-color: #000000;
+    
+}
+
+/** MEDIA QUERIES **/
+
+/** Extra small devices XS (portrait phones, less than 576px) **/
+
+@media (max-width: 575.98px ) {
+
+
+.margen-servicios{
+
+margin-top: 30%;
+padding-bottom: 10%;
+
+}
+}
+
+
+
+
+/** BIO PAGE **/
+
+body#bio{
+
+  text-align: center;
+}
+
+.margen-bio{
+
+  margin-top: 10%;
+  padding-bottom: 10%;
+  
+}
+
+
+@media (max-width: 575.98px ) {
+
+.margen-bio{
+
+  margin-top: 18%;
+  padding-bottom: 10%;
+  
+}
+
+
+ }
+
+
+
+
+
+
+/** CONTACTO PAGE **/
+
+a {
+  color: black;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+button.enviar {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+button:hover {opacity: 1}
+
+
+.margen-contacto {
+
+  margin-top: 10%;
+
+
+}
+
+.cto-t1 {
+
+  font-family: 'Rubik', sans-serif;
+font-size: 26px;
+letter-spacing: 0.8px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+}
+
+.borde-lg {
+
+  border: solid 2px;
+
+}
+
+
+.box {
+
+  border: solid 2px;
+}
+
+
+.box-contacto{
+
+padding-left: 10px ;
+
+}
+
+
+.mapa-mobile {
+
+margin-top: 20px;
+margin-bottom: 20px;
+display: flex;
+justify-content: center;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.margen-contacto {
+
+  margin-top: 30%
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+main.contacto, main.productos {
+  padding-top: 20%;
+}
+
+}
+
+
+/** POLITICAS DE PRIVACIDAD PAGE **/
+
+
+.margenpriv {
+
+margin: 10% 5% 10% 5%;
+}
+
+
+
+/** MEDIA QUERIES **/
+
+/** Extra small devices XS (portrait phones, less than 576px) **/
+
+@media (max-width: 575.98px) { 
+
+
+
+ }
+
+/** Small devices SM (landscape phones, less than 768px) **/
+
+@media (max-width: 767.98px) { 
+
+/** Cambia el fondo del index en dispositivos SM **/
+
+.view {
+    background: url("img/index/back21.jpg")
+    no-repeat center center;
+    background-size: cover;
+}
+
+/** Medium devices MD (tablets, less than 992px) **/
+
+
+ }
+
+/** Large devices LG (desktops, less than 1200px) **/
+
+@media (max-width: 1199.98px) { 
+
+main.productos {
+  padding-top: 5%;
+}
+
+ }
+
+/** Extra large devices XL (large desktops, 1200px and up) **/
+
+@media (min-width: 1200px) { ... }
+
+
+
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html id="productos" lang="en" class="full-height">
+<head>
+
+
+  <meta charset="UTF-8">
+  
+  <meta name="keywords" content="Gian Scaduto, Fotografia, Estudio, Cuadros, Comodoro, Rivadavia, Sesiones, Eventos">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <meta name="description" content="Somos un equipo dedicado a ofrecer servicios fotográficos y de producción de eventos; enfocados en brindar la mejor calidad en nuestros productos y servicios. Siendo recurso para nuestros clientes, creando valor a sus recuerdos desde la confianza y la calidad. Nuestra visión es Inmortalizar momentos únicos e irrepetibles, creando empatía y confianza, desde nuestra creatividad y responsabilidad.Buscamos ser relevantes en la vida de quienes deseen registrar su máximo potencial en una imagen que los inspire."> 
+
+  <title> Genuina Beer | Productos </title>
+
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<!-- Hoja de estilo propia -->
+<link rel="stylesheet" href="estilos.css">
+
+
+</head>
+
+<div class="margen-productos">
+<body id="productos">
+
+<div class="este"></div>
+
+<!--Barra de navegacion con logo-->
+<header>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+   <a class="navbar-brand" href="index.html"><img  src="img/gianlogo5.png" width="250" height="75" alt="Volver al Inicio"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+
+<li class="nav-item">
+  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>   
+</li>
+
+<li class="nav-item active">
+  <a class="nav-link" href="productos.html">Productos</a>
+</li>
+
+<li class="nav-item">
+ <a class="nav-link" href="contacto.html">Contacto</a>
+</li>
+
+</ul>
+
+  <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/gianscaduto.photo" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a a href="https://www.twitter.com/gianscaduto.photo" target="_blank"  class="nav-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/gianscaduto.photo" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
+        </li>
+  </ul>
+
+</div>
+
+</nav>
+  
+</header>
+
+<main class="productos">
+  <div class="container margen">
+
+
+
+<tbody id="carrito-body"></tbody>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm"></div>
+
+     <div id="animacion"class="col-sm title-clientes responsive-font-size font-weight-bold" style="font-size: 55px; color: black; display: none; justify-content: center; text-align: center; text-align: center; padding-bottom: 100px; "> Nuestras Cervezas </div>
+  
+
+    <div class="col-sm"> </div>
+  </div>
+</div>
+
+
+<!--<div class="row row-cols-1 row-cols-md-2" id="aca"-->
+ 
+</div>
+
+<div class="container">
+      <h4>Carrito de compras</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Codigo de ítem</th>
+            <th scope="col">Item</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col"></th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Su carrito de compras está vacio...</th>
+          </tr>
+        </tfoot>
+      </table>
+      
+      <div class="row" id="cards"></div>
+    </div>
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td></td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar carrito
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span></span></td>
+    </template>
+    
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td></td>
+        <td></td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <template id="template-card">
+      <div class="col-12 mb-2">
+        <div class="card">
+          <div class="card-body">
+            <img></img>
+            <h5>Titulo</h5>
+            <p>precio</p>
+            <button class="btn btn-dark">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </template>
+   
+
+
+
+
+</main>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Seccion: Redes sociales -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Contactate y seguinos en nuestras redes sociales:</span>
+    </div>
+
+    <!-- Left -->
+
+    <!-- Right --> <!-- Redes con target en nueva tab -->
+    <div>
+      <a href="https://github.com/yagocenturion10" target="_blank" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://github.com/yagocenturion10" target="_blank" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="https://github.com/yagocenturion10" target="_blank" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/yagocenturion10" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class=" fw-bold mb-4">
+            <i class="fas fa-beer"></i>
+
+            <strong>Genuino, genuina: </strong> <br><br>
+
+Del lat. genuīnus.
+<br><br>
+1. adj.   Auténtico, legítimo. Interés genuino. Versión genuina.
+<br><br>
+2. adj.   Propio o característico. Producto genuino de una época.
+<br><br>
+3. adj.   Que conserva con total pureza o autenticidad sus características propias o naturales.
+
+          </h6>
+          <p>
+            
+
+<br>
+
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold mb-4">
+            PRODUCTOS Y SERVICIOS
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Productos</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Servicios</a>
+          </p>
+       
+          <p>
+            <a href="#!" class="text-reset">Acerca de nosotros</a>
+          </p>
+        </div>
+
+
+        <!-- Columna Grid -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold mb-4">
+            Contacto
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Local : San Martín 258 - Comodoro Rivadavia <a href="https://www.google.com/maps/place/google+maps+san+martin+258/@-45.8610332,-67.4777746,3a,75y,90t/data=!3m6!1e1!3m4!1s*211m10*211y13683154271169852023*212y12945483855452353379*213m7*21139330259m6*212m5*211m3*211m2*211y13683154271169852023*212y12142062915950317611*212i258*212m2*211x3836356890*212x3620190015*213m2*211y13683155013825841435*212y17350625761437638553*215m2*211x3836355971*212x3620190055!2e0!7i13312!8i6656!4m2!3m1!1s0xbde454502bf2b277:0xb3a798fa79cab363"><br>Ver en Google Maps</a></p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            <a href="mailto:gian_scaph@gmail.com"> genuinabeer@gmail.com </a>  
+          </p>
+
+           
+          <p><i class="fab fa-whatsapp-square pr-1"></i>+ 0297 4585653 <a href="https://api.whatsapp.com/send?phone=5492974585653&text=Hola! Queria contactarme con vos..."> <br>Contactar por WhatsApp</a></p>
+          <p><i class="fas fa-fax pr-1"></i> + 0297 297-4585656</p>
+        </div>
+        <!-- Columna Grid -->
+      </div>
+      <!-- Fila Grid-->
+    </div>
+  </section>
+  <!-- Seccion: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 derechos">
+    
+    <a class="text-reset fw-bold" ><p class="">Genuina Beer © 2021 &nbsp|&nbsp <a href="privacidad.html">Políticas de Privacidad </a></small></p></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<!-- LINKS CDN de JavaScript de MDB 4.19.1 -->
+
+
+<!-- JQuery -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+
+<!-- Mis .JS -->
+
+<script type="text/javascript" src="js/app.js"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+[
+    {
+      "precio": 15000,
+      "id": 1,
+      "title": "Barril 50L",
+      "imagen": "../img/productos/barril50.jpg"
+    },
+    {
+      "precio": 10000,
+      "id": 2,
+      "title": "Barril 30L",
+      "imagen": "../img/productos/barril30.jpg"
+    },
+    {
+      "precio": 4000,
+      "id": 3,
+      "title": "Barril 10L",
+      "imagen": "../img/productos/barril10.jpg"
+    },
+    {
+      "precio": 3000,
+      "id": 4,
+      "title": "Choppera 5L",
+      "imagen": "../img/productos/barril50.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Stout 1L",
+      "precio": 500,
+      "imagen": "../img/productos/botellanegra750.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Red Ale 1L",
+      "precio": 500,
+      "imagen": "./img/productos/botellacolo750.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Pale Ale 1L",
+      "precio": 500,
+      "imagen": "../img/productos/botellarubia750.jpg"
+    },
+    {
+      "id": 8,
+      "title": "IPA 1L",
+      "precio": 550,
+      "imagen": "../img/productos/botellaipa750.jpg"
+    }
+]
